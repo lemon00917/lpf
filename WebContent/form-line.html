@@ -1,0 +1,419 @@
+<!doctype html>
+<html>
+	<style>
+	body{
+		font-family : 宋体;
+        font-size : 1em;
+        /* color : #f00;  */
+		list-style:none;
+	}
+
+	/*头部居中*/
+	.hh {  }
+
+
+	/**/
+	.jcsj{
+		font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+		/* margin:5px 5px 5px 20px; */
+		border-collapse:collapse;
+	}
+	.zjm{
+	}
+	/*去除table空白间隙*/
+	table { border-collapse: collapse; padding: 0;}
+
+	/*传感平衡数据中 th样式*/
+	.thead {
+		border-bottom: 2px solid black;
+		border-top: 2px solid black; 	
+	}
+	/*检测提示中 th样式*/
+	.head{
+		border-bottom: 2px solid black;
+		border-top: 2px solid black; 
+		background-color: #D3D3D3;
+	}
+	input{
+		text-align: center;
+		width: 110px; 
+		border: 0px;
+	}
+	.dashhead {
+		border: 2px dotted black;
+	}
+	.dashheadleft {
+		border: 2px dotted black;
+		border-left:0px;
+	}
+	.dashheadright{
+		border: 2px dotted black;
+		border-right:0px;
+	}
+</style>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>检测报告</title>
+    <meta name="description" content="这是一个 index 页面">
+    <meta name="keywords" content="index">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="icon" type="image/png" href="assets/i/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <link rel="stylesheet" href="assets/css/amazeui.min.css" />
+    <link rel="stylesheet" href="assets/css/admin.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body data-type="generalComponents">
+
+
+    <header class="am-topbar am-topbar-inverse admin-header">
+        <div class="am-topbar-brand">
+        	<span>便携式经络检测仪系统</span>
+            <!--<a href="javascript:;" class="tpl-logo">
+                <img src="assets/img/logo.png" alt="">
+            </a>-->
+        </div>
+        <div class="am-icon-list tpl-header-nav-hover-ico am-fl am-margin-right">
+
+        </div>
+
+        <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+
+        <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
+
+            <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list tpl-header-list">
+                <li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
+                    <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
+                        <span class="am-icon-bell-o"></span> 提醒 <span class="am-badge tpl-badge-success am-round">5</span></span>
+                    </a>
+                    <ul class="am-dropdown-content tpl-dropdown-content">
+                        <li class="tpl-dropdown-content-external">
+                            <h3>你有 <span class="tpl-color-success">5</span> 条提醒</h3><a href="###">全部</a></li>
+                        <li class="tpl-dropdown-list-bdbc"><a href="#" class="tpl-dropdown-list-fl"><span class="am-icon-btn am-icon-plus tpl-dropdown-ico-btn-size tpl-badge-success"></span> 呼吸平稳：当感情冲动时，我们会不由自主地屏住呼吸，这只会加重精神压力。</a>
+                            <span class="tpl-dropdown-list-fr">3小时前</span>
+                        </li>
+                        <li class="tpl-dropdown-list-bdbc"><a href="#" class="tpl-dropdown-list-fl"><span class="am-icon-btn am-icon-check tpl-dropdown-ico-btn-size tpl-badge-danger"></span> 纠正姿势：精神压力致使我们渐渐拱肩驼背，赶快伸直，仿佛从肩上卸掉一堆重物。</a>
+                            <span class="tpl-dropdown-list-fr">15分钟前</span>
+                        </li>
+                        <li class="tpl-dropdown-list-bdbc"><a href="#" class="tpl-dropdown-list-fl"><span class="am-icon-btn am-icon-bell-o tpl-dropdown-ico-btn-size tpl-badge-warning"></span> 规范行为：即使在几乎没有希望的情况下也要牢记：你能改变局势，向好的方向发展。</a>
+                            <span class="tpl-dropdown-list-fr">2天前</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
+                    <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
+                        <span class="am-icon-comment-o"></span> 消息 <span class="am-badge tpl-badge-danger am-round">9</span></span>
+                    </a>
+                    <ul class="am-dropdown-content tpl-dropdown-content">
+                        <li class="tpl-dropdown-content-external">
+                            <h3>你有 <span class="tpl-color-danger">9</span> 条新消息</h3><a href="###">全部</a></li>
+                        <li>
+                            <a href="#" class="tpl-dropdown-content-message">
+                                <span class="tpl-dropdown-content-photo">
+                      <img src="assets/img/user02.png" alt=""> </span>
+                                <span class="tpl-dropdown-content-subject">
+                      <span class="tpl-dropdown-content-from"> 禁言小张 </span>
+                                <span class="tpl-dropdown-content-time">10分钟前 </span>
+                                </span>
+                                <span class="tpl-dropdown-content-font"> 笑对增强免疫系统有奇效，既消耗热量，又改善自我感觉。 </span>
+                            </a>
+                            <a href="#" class="tpl-dropdown-content-message">
+                                <span class="tpl-dropdown-content-photo">
+                      <img src="assets/img/user03.png" alt=""> </span>
+                                <span class="tpl-dropdown-content-subject">
+                      <span class="tpl-dropdown-content-from"> Steam </span>
+                                <span class="tpl-dropdown-content-time">18分钟前</span>
+                                </span>
+                                <span class="tpl-dropdown-content-font"> 边看电视边做些简单的操练。有事时，不要把人从别的房间里喊过来，而是走过去。 </span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
+                    <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
+                        <span class="am-icon-calendar"></span> 进度 <span class="am-badge tpl-badge-primary am-round">4</span></span>
+                    </a>
+                    <ul class="am-dropdown-content tpl-dropdown-content">
+                        <li class="tpl-dropdown-content-external">
+                            <h3>你有 <span class="tpl-color-primary">4</span> 个任务进度</h3><a href="###">全部</a></li>
+                        <li>
+                            <a href="javascript:;" class="tpl-dropdown-content-progress">
+                                <span class="task">
+                        <span class="desc">检测进度 </span>
+                                <span class="percent">45%</span>
+                                </span>
+                                <span class="progress">
+                        <div class="am-progress tpl-progress am-progress-striped"><div class="am-progress-bar am-progress-bar-success" style="width:45%"></div></div>
+                    </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="tpl-dropdown-content-progress">
+                                <span class="task">
+                        <span class="desc">健康小知识 </span>
+                                <span class="percent">30%</span>
+                                </span>
+                                <span class="progress">
+                       <div class="am-progress tpl-progress am-progress-striped"><div class="am-progress-bar am-progress-bar-secondary" style="width:30%"></div></div>
+                    </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="tpl-dropdown-content-progress">
+                                <span class="task">
+                        <span class="desc">管理中心 </span>
+                                <span class="percent">60%</span>
+                                </span>
+                                <span class="progress">
+                        <div class="am-progress tpl-progress am-progress-striped"><div class="am-progress-bar am-progress-bar-warning" style="width:60%"></div></div>
+                    </span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="am-hide-sm-only"><a href="javascript:;" id="admin-fullscreen" class="tpl-header-list-link"><span class="am-icon-arrows-alt"></span> <span class="admin-fullText">开启全屏</span></a></li>
+
+                <li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
+                    <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
+                        <span class="tpl-header-list-user-nick"></span><span class="tpl-header-list-user-ico"> <img src="assets/img/user01.png"></span>
+                    </a>
+                    <ul class="am-dropdown-content">
+                        <li><a href="#"><span class="am-icon-bell-o"></span> 资料</a></li>
+                        <li><a href="#"><span class="am-icon-cog"></span> 设置</a></li>
+                        <li><a href="#"><span class="am-icon-power-off"></span> 退出</a></li>
+                    </ul>
+                </li>
+                <li><a href="login.jsp" class="tpl-header-list-link"><span class="am-icon-sign-out tpl-header-list-ico-out-size"></span></a></li>
+            </ul>
+        </div>
+    </header>
+
+
+
+
+
+
+
+    <div class="tpl-page-container tpl-page-header-fixed">
+        <div class="tpl-left-nav tpl-left-nav-hover">
+            <div class="tpl-left-nav-title">
+                系统列表
+            </div>
+            <div class="tpl-left-nav-list">
+                <ul class="tpl-left-nav-menu">
+                    <li class="tpl-left-nav-item">
+                        <a href="index.html" class="nav-link">
+                            <i class="am-icon-home"></i>
+                            <span>首页</span>
+                        </a>
+                    </li>
+                    <li class="tpl-left-nav-item">
+                        <a href="chart.html" class="nav-link tpl-left-nav-link-list">
+                            <i class="am-icon-bar-chart"></i>
+                            <span>健康分析</span>
+                        </a>
+                    </li>
+
+                    <li class="tpl-left-nav-item">
+                        <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                            <i class="am-icon-table"></i>
+                            <span>用户管理</span>
+                            <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
+                        </a>
+                        <ul class="tpl-left-nav-sub-menu">
+                            <li>
+                                <a href="family.jsp">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>用户个人信息</span>
+                                    <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                </a>
+
+                                <a href="table-images-list.html" >
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>用户检测信息</span>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="tpl-left-nav-item">
+                        <!-- 打开状态 a 标签添加 active 即可   -->
+                        <a href="javascript:;" class="nav-link tpl-left-nav-link-list active">
+                            <i class="am-icon-wpforms"></i>
+                            <span>医疗检测</span>
+                            <!-- 列表打开状态的i标签添加 tpl-left-nav-more-ico-rotate 图表即90°旋转  -->
+                            <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right tpl-left-nav-more-ico-rotate"></i>
+                        </a>
+                        <!-- 打开状态 添加 display:block-->
+                        <ul class="tpl-left-nav-sub-menu" style="display: block;">
+                            <li>
+                                <a href="form-amazeui.html">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>医疗检测</span>
+                                    <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                </a>
+
+                                <a href="form-line.html" class="active">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>检测报告</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="tpl-left-nav-item">
+                        <a href="login.jsp" class="nav-link tpl-left-nav-link-list">
+                            <i class="am-icon-key"></i>
+                            <span>登录</span>
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+        <div class="tpl-content-wrapper">
+            <div class="tpl-content-page-title">
+                检测报告
+            </div>
+            <ol class="am-breadcrumb">
+                <li><a href="#" class="am-icon-home">首页</a></li>
+                <li><a href="#">医疗检测</a></li>
+                <li class="am-active">检测报告</li>
+            </ol>
+            <div class="tpl-portlet-components">
+                <div class="portlet-title">
+                    <div class="caption font-green bold">
+                    	检测报告
+                    </div>
+                    <div class="tpl-portlet-input tpl-fz-ml">
+                        <div class="portlet-input input-small input-inline">
+                            <div class="input-icon right">
+                                 </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="tpl-block">
+
+                    <div class="am-g">
+                    	<div id="d1"
+			style="width: 100%; text-align: center; margin-top: 1%;">
+			<div style="position: absolute; left: 5px; top: 10px; z-index: 999;">
+
+			</div>
+			<div
+				style="font-size: 25px; text-align: center; margin: -35px 40px 0px 40px">
+				<b>成都中医药大学毕业设计<br />经络传感检测报告
+				</b>
+			</div>
+			<div style="text-align: right">
+				<h5 class='hh'>
+					检测时间：<a></a>
+				</h5>
+			</div>
+			<hr style="border-top: 1px solid #555555;" />
+			<table class="jcsj"
+				style="width: 100%; font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;">
+				<tr align="left">
+
+					<td><b>ID&nbsp;&nbsp;号:</b> <a></a></td>
+					<td><b>姓&nbsp;名：</b> <a></a></td>
+					<td><b>性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：</b>
+						<a> </a></td>
+					<td><b>年&nbsp;龄：</b> <a> </a></td>
+				</tr>
+				<tr align="left">
+					<td><b>节&nbsp;&nbsp;气：</b> <a>立春</a></td>
+					<td><b>时&nbsp;辰：</b> <a>乙巳</a></td>
+					<td><b>当令经络：</b> <a></a></td>
+					<td><b>科&nbsp;别：</b> <a s>康复科</a></td>
+				</tr>
+			</table>
+		</div>
+
+		<div id="report_24jl" style="width: 600px; height: 400px;"></div>
+
+		<div id="d5" hidden="true">
+			<img id="jlcg"></img>
+		</div>
+		<div id="d3">
+			<div>
+				<a
+					style="font-weight: bold; font-size: 15px; position: absolute; top: 385px;margin-left: -1%;">经络传感分析</a><br>
+				<div
+					style="text-indent: 2em; position: absolute; top: 400px;margin-left: 1%;">
+					<a>根据您的经络传感状态，提示：您目前所检测的经络为 <a class="tz">肾经</a>经络。
+					</a>
+				</div>
+			</div>
+
+			<div
+				style="text-align: center; position: absolute;  top: 425px;margin-left: 1%;">
+				<p>
+					<a class="tz">肾经</a> 经络特征
+				</p>
+				<!-- <a >气虚体质是以人体功能不足形成的以疲乏气短、自汗、易感冒为主要特征的一部分人群。</a> -->
+				<ul style="list-style-type: none position:absolute; left: 275px;">
+					<li>【总体特征】</li>
+					<li>【常见表现】</li>
+					<li>【发病倾向】</li>
+					<li>【经络】</li>
+					<li>【经络病症状】</li>
+					<li>【对应脏腑】</li>
+					<li>【相关疾病】</li>
+					<li>【食物】</li>
+					<li>【食药两用】</li>
+				</ul>
+			</div>
+		</div>
+		<div id="d4" style="margin-top: 20px">
+			<hr style="border-top: 1px solid #555555; width: 100%;" />
+			<table style="width: 100%;">
+				<tr>
+					<td><b>科室：</b> <a>展厅</a> </th>
+					<td><b>操作医师：</b>
+						<a>xxxx</a>
+						
+					</th>
+			</tr>
+		</table>
+	</div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+    <script src="assets/js/jquery-2.1.1.js"></script>
+    <script src="assets/js/amazeui.min.js"></script>
+    <script src="assets/js/app.js"></script>
+	
+</body>
+</html>

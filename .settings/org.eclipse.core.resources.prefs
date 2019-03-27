@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+encoding//src/com/cdutcm/dao/FamilyDao.java=UTF-8
+encoding//src/com/cdutcm/dao/UserDao.java=UTF-8
+encoding//src/com/cdutcm/service/FamilyService.java=gbk
+encoding//src/com/cdutcm/service/UserinfoService.java=UTF-8
+encoding//src/com/cdutcm/utils/MD5Utils.java=UTF-8
+encoding//src/com/cdutcm/web/filter/GenericEncodingFilter.java=UTF-8
+encoding//src/com/cdutcm/web/servlet/AddFamilyServlet.java=gbk
+encoding//src/com/cdutcm/web/servlet/AddInfoServlet.java=UTF-8
+encoding//src/com/cdutcm/web/servlet/CheckUsernameServlet.java=UTF-8
+encoding//src/com/cdutcm/web/servlet/DeleteInfoServlet.java=UTF-8
+encoding//src/com/cdutcm/web/servlet/LoginServlet.java=gbk
+encoding//src/com/cdutcm/web/servlet/RegisterServlet.java=gbk
+encoding//src/com/cdutcm/web/servlet/SelectFamilyIdServlet.java=gbk
+encoding//src/com/cdutcm/web/servlet/UserinfoServlet.java=UTF-8
+encoding/<project>=UTF-8
