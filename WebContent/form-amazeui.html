@@ -362,7 +362,7 @@
 			<br />
 			<div class="form-group has-success has-feedback">
 				<label class="control-label" for="inputSuccess4">检测结果</label> <input
-					type="text" class="form-control" name="jcresult" name="jcresult"
+					type="text" class="form-control" id="jcresult" name="jcresult"
 					aria-describedby="inputSuccess4Status" style="width: 450px">
 				<span class="glyphicon glyphicon-ok form-control-feedback"
 					aria-hidden="true"></span>
@@ -480,15 +480,6 @@
 						document.getElementById("time").value = currentdate;
 
 					});
-	//var contextPath = '${request.contextPath}';
-	//var postUrl = "${request.contextPath}/record/addRecord";
-
-	/* function jc() { 
-			document.getElementById("bg").style.display ="block";
-			document.getElementById("show").style.display ="block";
-			jcstart();
-			setTimeout("t1()",6000);			       
-	} */
 	 	function t1(){
 	 		$("#jctips").text("检测完成！");
 	 		setTimeout("hideDiv()",1000);
@@ -520,18 +511,16 @@
 	        }
 	        });
 	}
-	/* function jcstop(){
-	var id=$("#name").val();
-		  $.ajax({
-		  type: "POST",
-	      url: "${request.contextPath}/record/jcStop",
-	      data:id,
-	        success: function(data) {
-	        $("#result").val(data);
-	        }
-	        });
-	} */
-	 
+	function jcstop(){
+		//var id=$("#name").val();
+			  $.ajax({
+			  type: "POST",
+		      url: "jcstop",
+		        success: function(data) {
+		        $("#jcresult").val(data);
+		        }
+		        });
+		}
 
 </script> 
 

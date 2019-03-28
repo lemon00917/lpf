@@ -165,4 +165,14 @@
     <servlet-name>JCStartServlet</servlet-name>
     <url-pattern>/jcstart</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>JCStopServlet</display-name>
+    <servlet-name>JCStopServlet</servlet-name>
+    <servlet-class>com.cdutcm.web.servlet.JCStopServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JCStopServlet</servlet-name>
+    <url-pattern>/jcstop</url-pattern>
+  </servlet-mapping>
 </web-app>
